@@ -1,0 +1,14 @@
+Q1. Given an array u of given length n. 
+
+n = 4
+u = ["abcdef", "pqrs", "xyzuvabb", "aaaaaa"]
+c = []
+for i in u:
+    print(i[::2])
+    i = len(set(i[::2]))
+    b = (2,3,5,7,11,13,17,19)
+    if i in b:
+        c.append(1)
+    else:
+        c.append(0)
+print(c)
