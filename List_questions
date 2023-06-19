@@ -27,4 +27,5 @@ for i in a:
     result = result ^ i
 print(result)'''
 
+
 # Q2. 
