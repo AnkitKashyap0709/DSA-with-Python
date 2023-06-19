@@ -1,0 +1,30 @@
+# Q1. Find the only odd element.
+
+# Naive approach:
+# Time: O(2n) or O(n), Space: O(n) when in worst case all the elements in dictionary are unique.
+
+'''def tr(a):
+  d = {}
+  for i in a:
+    if i in d:
+      d[i] = d.get(i) + 1
+    else:
+      d[i] = 1
+  for i in d:
+    if d.get(i) % 2 != 0:
+      return i
+
+a = [10,20,30,20,10]
+print(tr(a))'''
+
+# Optimal approach:
+
+# Time: O(n), Space: O(1)
+
+'''a = [10,20,30,20,10]
+result = 0
+for i in a:
+    result = result ^ i
+print(result)'''
+
+# Q2. 
